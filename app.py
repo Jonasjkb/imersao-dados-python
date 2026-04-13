@@ -13,7 +13,7 @@ st.set_page_config(
 # Com o Time to Live, onde dados serão recarregados no intervalo de tempo informado
 @st.cache_data(ttl=3600)
 def load_data():
-    url = "https://raw.githubusercontent.com/vqrca/dashboard_salarios_dados/refs/heads/main/dados-imersao-final.csv"
+    url = "https://raw.githubusercontent.com/Jonasjkb/imersao-dados-python/refs/heads/main/intensivo-analise-dados-jonas.csv"
     return pd.read_csv(url)
 
 df = load_data()
