@@ -42,7 +42,8 @@ df_filtrado = df[
     (df['ano'].isin(anos_selecionados)) &
     (df['senioridade'].isin(senioridades_selecionadas)) &
     (df['contrato'].isin(contratos_selecionados)) &
-    (df['tamanho_empresa'].isin(tamanhos_selecionados))
+    (df['tamanho_empresa'].isin(tamanhos_selecionados)) &
+    (df['remoto'].isin(modelos_trabalho_disponiveis_selecionados))
 ]
 
 # --- Conteúdo Principal ---
