@@ -32,6 +32,10 @@ contratos_selecionados = st.sidebar.multiselect("Tipo de Contrato", contratos_di
 tamanhos_disponiveis = sorted(df['tamanho_empresa'].unique())
 tamanhos_selecionados = st.sidebar.multiselect("Tamanho da Empresa", tamanhos_disponiveis, default=tamanhos_disponiveis)
 
+# Filtro por Modelo de Trabalho
+modelos_trabalho_disponiveis = sorted(df['remoto'].unique())
+modelos_trabalho_disponiveis_selecionados = st.sidebar.multiselect("Modelos de Trabalho", modelos_trabalho_disponiveis, default=modelos_trabalho_disponiveis)
+
 # --- Filtragem do DataFrame ---
 # O dataframe principal é filtrado com base nas seleções feitas na barra lateral.
 df_filtrado = df[
